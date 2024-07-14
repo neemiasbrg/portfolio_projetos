@@ -2982,6 +2982,7 @@ input, select, textarea {
 							margin-top: 0;
 						}
 
+<<<<<<< HEAD
 	}
 
 /* Estilo para imagens flutuantes */
@@ -2994,3 +2995,6 @@ input, select, textarea {
 .text {
     overflow: hidden; /* Garante que o texto flua corretamente ao redor da imagem */
 }
+=======
+	}
+>>>>>>> 984b28ea10878f659a5b3492fafd72e63f04c034
