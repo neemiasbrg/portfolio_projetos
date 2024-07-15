@@ -57,7 +57,7 @@ Aqui est√£o algumas das habilidades que adquiri ao longo da minha jornada em Ci√
   - Streamlit
   - Cloud: Heroku, AWS
 
-Para mais detalhes sobre as minhas habilidades, [clique aqui](habilidades.html).
+Para mais detalhes sobre as minhas habilidades, [clique aqui](https://neemiasbrg.github.io/portfolio_projetos/habilidades.html).
 
 ## Contato
 
