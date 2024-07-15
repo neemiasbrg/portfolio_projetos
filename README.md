@@ -17,19 +17,19 @@ Seja bem-vindo ao meu portfólio! Aqui, você encontrará uma coleção de proje
 
 Explore e descubra como a Ciência de Dados pode transformar negócios e resolver problemas complexos. Sinta-se à vontade para entrar em contato para discutir projetos ou oportunidades!
 
-[Veja minhas experiências](experiencias.html)
+[Veja minhas experiências]([experiencias.html](https://neemiasbrg.github.io/portfolio_projetos/experiencias.html))
 
 ## Projetos
 
-Em breve você poderá explorar uma seleção detalhada dos meus projetos de Ciência de Dados, onde cada um mostra a aplicação prática das minhas habilidades e técnicas em situações do mundo real. [Clique aqui para ver os projetos](projetos.html).
+Em breve você poderá explorar uma seleção detalhada dos meus projetos de Ciência de Dados, onde cada um mostra a aplicação prática das minhas habilidades e técnicas em situações do mundo real. [Clique aqui para ver os projetos](https://neemiasbrg.github.io/portfolio_projetos/projetos.html).
 
 ## Experiências
 
-Nesta seção, você encontrará informações detalhadas sobre minhas experiências profissionais e acadêmicas na área de Ciência de Dados. Cada experiência destaca o impacto das minhas contribuições e os aprendizados adquiridos. [Saiba mais sobre minhas experiências](experiencias.html).
+Nesta seção, você encontrará informações detalhadas sobre minhas experiências profissionais e acadêmicas na área de Ciência de Dados. Cada experiência destaca o impacto das minhas contribuições e os aprendizados adquiridos. [Saiba mais sobre minhas experiências](https://neemiasbrg.github.io/portfolio_projetos/experiencias.html).
 
 ## Sobre Mim
 
-Aqui você pode aprender mais sobre minha trajetória profissional e acadêmica, além dos projetos que desenvolvi ao longo do tempo. Esta seção oferece uma visão geral de minha jornada e como cheguei a me tornar um especialista em Ciência de Dados. [Descubra mais sobre mim](sobre-mim.html).
+Aqui você pode aprender mais sobre minha trajetória profissional e acadêmica, além dos projetos que desenvolvi ao longo do tempo. Esta seção oferece uma visão geral de minha jornada e como cheguei a me tornar um especialista em Ciência de Dados. [Descubra mais sobre mim](https://neemiasbrg.github.io/portfolio_projetos/sobre-mim.html).
 
 ## Habilidades
 
