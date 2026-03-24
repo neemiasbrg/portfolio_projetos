@@ -3,165 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sobre Neemias Gonçalves Braga, especialista em Ciência de Dados, com projetos e experiência em Big Data e Inteligência Artificial.">
-    <title>Sobre Mim - Neemias Gonçalves Braga</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="description" content="Sobre Neemias Gonçalves Braga — cientista de dados apaixonado por resolver problemas complexos com dados.">
+    <title>Sobre Mim — Neemias Gonçalves Braga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <style>
-        /* Adicionando estilos específicos para alinhar a imagem à esquerda */
-        .sobre-mim .image.left {
-            float: left;
-            margin-right: 20px; /* Espaço entre a imagem e o texto */
-            margin-bottom: 20px; /* Espaço abaixo da imagem */
-        }
-
-        .sobre-mim .image.left img {
-            display: block;
-            max-width: 200px; /* Ajuste a largura máxima da imagem */
-            height: auto; /* Mantém a proporção da imagem */
-        }
-
-        /* Garantir que o texto flua ao redor da imagem */
-        .sobre-mim .text {
-            overflow: hidden; /* Faz com que o texto flua ao redor da imagem */
-        }
-
-        /* Adiciona algum estilo ao parágrafo inicial para garantir que o texto se alinhe bem com a imagem */
-        .sobre-mim .intro-text {
-            overflow: hidden;
-            margin-bottom: 20px; /* Espaço abaixo do parágrafo */
-        }
-    </style>
 </head>
-<body class="sobre-mim is-preload">
-    <div id="page-wrapper">
+<body>
 
-        <!-- Header -->
-        <header id="header" class="wrapper">
-            <div id="logo">
-                <h1><a href="index.html">Olá, seja muito bem-vindo(a) ao meu portfólio de projetos de Ciência de Dados.</a></h1>
-                <p>Você vai encontrar também minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo a Ciência de Dados.</p>
+    <!-- NAV -->
+    <nav class="main-nav">
+        <a class="nav-logo" href="index.html">
+            <span class="dot"></span>Neemias Braga
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="experiencias.html">Experiências</a></li>
+            <li><a href="sobre-mim.html" class="active">Sobre Mim</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <div class="hero-eyebrow">
+                <i class="fas fa-circle"></i>
+                Conheça o profissional
             </div>
+            <h1>Sobre <span class="highlight">Mim</span></h1>
+            <p>Analista em transição para Ciência de Dados com foco em impacto real</p>
+        </div>
+    </section>
 
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="experiencias.html">Experiências</a></li>
-                    <li class="current"><a href="sobre-mim.html">Sobre Mim</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Main -->
-        <main id="main" class="wrapper style2">
-            <div class="title">Sobre Mim</div>
-            <div class="container">
-                <!-- Content -->
-                <div id="content">
-                    <article class="box post">
-                        <header class="style1">
-                            <div class="intro-text">
-                                <figure class="image left">
-                                    <img src="images/linkedin_image.jpg" alt="Minha foto">
-                                </figure>
-                                <h2>Olá, eu sou Neemias Gonçalves Braga</h2>
-                            </div>
-                            <p>Sou formado em Big Data e Inteligência Artificial e atualmente estou em busca de novas oportunidades para aplicar minhas habilidades e conhecimentos em Ciência de Dados.</p>
-                            <p>Estou interessado em trabalhar como Cientista de Dados, com o objetivo de aprimorar a tomada de decisões e construir soluções baseadas em dados. Vamos conversar!</p>
-                            <p>Estou sempre em busca de aprimorar minhas habilidades e aprender novas técnicas para resolver problemas complexos e gerar insights valiosos para empresas.</p>
-                        </header>
-                    </article>
+    <!-- SOBRE MIM -->
+    <section class="section section-alt">
+        <div class="about-grid">
+            <div class="about-photo fade-in">
+                <img src="images/linkedin_image.jpg" alt="Neemias Gonçalves Braga" onerror="this.parentElement.querySelector('.about-photo-placeholder').style.display='flex'; this.style.display='none'">
+                <div class="about-photo-placeholder" style="display:none"><i class="fas fa-user"></i></div>
+            </div>
+            <div class="about-content fade-in">
+                <h2>Olá, eu sou Neemias Gonçalves Braga</h2>
+                <p>Sou formado em Big Data e Inteligência Artificial e estou em transição para Ciência de Dados. Venho de uma sólida base como Analista de Operações em uma instituição financeira, onde desenvolvi visão de processos, dados e impacto de negócio.</p>
+                <p>Estou buscando oportunidades como Cientista de Dados, com o objetivo de aplicar Machine Learning, análise estatística e storytelling analítico para gerar decisões mais inteligentes e resultados mensuráveis.</p>
+                <p>Sou apaixonado por resolver problemas complexos com dados. Cada projeto do portfólio representa um problema real que eu modelei do zero: da coleta e exploração até a entrega do insight ou do modelo em produção.</p>
+                <div class="about-tags">
+                    <span class="about-tag">Python</span>
+                    <span class="about-tag">Machine Learning</span>
+                    <span class="about-tag">XGBoost</span>
+                    <span class="about-tag">SHAP</span>
+                    <span class="about-tag">SQL</span>
+                    <span class="about-tag">Streamlit</span>
+                    <span class="about-tag">Porto Alegre, RS</span>
                 </div>
             </div>
-        </main>        
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer id="footer" class="wrapper">
-            <div class="title">Contatos</div>
-            <div class="container">
-                <header class="style1">
-                    <h2>Ficou com dúvidas sobre algum projeto?</h2>
-                    <p>Sinta-se à vontade para entrar em contato. Dúvidas, sugestões e elogios são sempre bem-vindos!</p>
-                </header>
-                <div class="row">
-                    <div class="col-6 col-12-medium">
-                        <!-- Contact Form -->
-                        <section>
-                            <form method="post" action="mailto:neemiasbrg@gmail.com" enctype="multipart/form-data">
-                                <div class="row gtr-50">
-                                    <div class="col-6 col-12-small">
-                                        <input type="text" name="name" id="contact-name" placeholder="Nome" required>
-                                    </div>
-                                    <div class="col-6 col-12-small">
-                                        <input type="email" name="email" id="contact-email" placeholder="E-mail" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea name="message" id="contact-message" placeholder="Mensagem" rows="4" required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <ul class="actions">
-                                            <li><input type="submit" class="style1" value="Enviar"></li>
-                                            <li><input type="reset" class="style2" value="Apagar"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </form>
-                        </section>
-                    </div>
-                    <div class="col-6 col-12-medium">
-                        <!-- Contact Details -->
-                        <section class="feature-list small">
-                            <div class="row">
-                                <div class="col-6 col-12-small">
-                                    <section>
-                                        <h3 class="icon solid fa-home">Endereço</h3>
-                                        <p>Porto Alegre, RS, Brasil</p>
-                                    </section>
-                                </div>
-                                <div class="col-6 col-12-small">
-                                    <section>
-                                        <h3 class="icon solid fa-comment">Social</h3>
-                                        <p>
-                                            <a href="https://github.com/neemiasbrg" target="_blank" rel="noopener noreferrer">GitHub</a><br>
-                                            <a href="https://www.linkedin.com/in/neemias-braga/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
-                                            <a href="https://www.kaggle.com/neemiasbraga" target="_blank" rel="noopener noreferrer">Kaggle</a>
-                                        </p>
-                                    </section>
-                                </div>
-                                <div class="col-6 col-12-small">
-                                    <section>
-                                        <h3 class="icon solid fa-envelope">Email</h3>
-                                        <p><a href="mailto:neemiasbrg@gmail.com">neemiasbrg@gmail.com</a></p>
-                                    </section>
-                                </div>
-                                <div class="col-6 col-12-small">
-                                    <section>
-                                        <h3 class="icon solid fa-phone">Telefone</h3>
-                                        <p>+55 (51) 99649-7114</p>
-                                    </section>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div id="copyright">
-                    <ul>
-                        <li>&copy; 2024 Neemias Gonçalves Braga. Todos os direitos reservados.</li>
-                        <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-                    </ul>
+    <!-- FORMAÇÃO -->
+    <section class="section">
+        <div class="section-header fade-in">
+            <span class="section-tag">Formação</span>
+            <h2>Educação & Certificações</h2>
+            <p>Base técnica para atuar em projetos de dados de ponta a ponta</p>
+        </div>
+        <div class="experiences-grid">
+            <div class="exp-card fade-in">
+                <div class="exp-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Big Data e Inteligência Artificial</h3>
+                <div class="exp-period">Graduação</div>
+                <p>Formação completa em análise de dados massivos, algoritmos de machine learning e aplicações de IA em cenários reais de negócio.</p>
+            </div>
+            <div class="exp-card fade-in">
+                <div class="exp-card-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Data Science do Zero ao Avançado</h3>
+                <div class="exp-period">Comunidade DS</div>
+                <p>Formação prática em Python, estatística, machine learning, feature engineering, storytelling com dados e deploy de modelos em produção.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Neemias Gonçalves Braga</h3>
+                <p>Analista de Dados em transição para Ciência de Dados. Projetos com Python, Machine Learning e impacto real de negócio.</p>
+                <div class="social-links">
+                    <a class="social-link" href="https://github.com/neemiasbrg" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a class="social-link" href="https://www.linkedin.com/in/neemias-braga/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-link" href="https://www.kaggle.com/neemiasbraga" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i></a>
+                    <a class="social-link" href="mailto:neemiasbrg@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-        </footer>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="index.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="experiencias.html">Experiências</a>
+                <a href="sobre-mim.html">Sobre Mim</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:neemiasbrg@gmail.com">neemiasbrg@gmail.com</a>
+                <a href="https://wa.me/5551996497114" target="_blank">+55 (51) 99649-7114</a>
+                <a href="#">Porto Alegre, RS — Brasil</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Neemias Gonçalves Braga. Todos os direitos reservados.
+        </div>
+    </footer>
 
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
