@@ -73,8 +73,6 @@ Conecte-se comigo também nas redes sociais:
 - [Kaggle](https://www.kaggle.com/neemiasbraga)
 
 ## Créditos
-
-- **Design**: [HTML5 UP](http://html5up.net)
 - **Todos os direitos reservados** &copy; 2024 Neemias Gonçalves Braga
 
 ---
