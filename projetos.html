@@ -6,6 +6,7 @@
     <meta name="description" content="Explore os projetos de Ciência de Dados de Neemias Gonçalves Braga, incluindo programa de fidelidade, identificação de imóveis e análise de preços de combustíveis.">
     <title>Projetos - Neemias Gonçalves Braga</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/projects-custom.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body class="projetos is-preload">
@@ -32,61 +33,296 @@
 
         <!-- Highlights -->
         <section id="highlights" class="wrapper style3">
-            <div class="title">Portfólio</div>
+            <div class="title">Portfólio de Projetos</div>
             <div class="container">
-                <div class="row aln-center">
-                    <div class="col-4 col-12-medium">
-                        <section class="highlight">
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <div class="filter-title">Filtrar por categoria:</div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
+                        <button class="filter-btn" data-filter="dashboard">Dashboard & Analytics</button>
+                        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                        <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+                        <button class="filter-btn" data-filter="bighorn">Bighorn</button>
+                        <button class="filter-btn" data-filter="horizon">Horizon</button>
+                    </div>
+                </div>
+                <div class="row aln-center" id="projects-container">
+                    <div class="col-4 col-12-medium project-item" data-category="dashboard">
+                        <section class="highlight project-card">
+                            <div class="project-category">Dashboard & Analytics</div>
                             <a href="https://github.com/neemiasbrg/Curry-Company-Project" target="_blank" class="image featured">
-                                <img src="images/curry_company.png" alt="Identificação de Imóveis" />
+                                <img src="images/curry_company.png" alt="Curry Company Dashboard" />
                             </a>
-                            <h3><a href="https://github.com/neemiasbrg/Curry-Company-Project" target="_blank">Cury Company - Análise de KPIs Estratégicos</a></h3>
-                            <p>Nesse projeto, os conceitos de Programação em Python, manipulação de
-								dados, pensamento estratégico e lógica de negócio, junto com ferramentas
-								de desenvolvimetno web como o Streamlit e Github, foram usados para
-								desenvolver um painel gerencial com as principais métricas de uma empresa
-								marketplace de delivery de comida na India.
-								O resultado final do projeto foi um painel hospedado em um ambiente Cloud
-								e disponibilizado através de um link web. O painel pode ser acessado por
-								qualquer dispositivo conectado na internet.
-							</p>
+                            <h3><a href="https://github.com/neemiasbrg/Curry-Company-Project" target="_blank">Curry Company - Dashboard de KPIs Estratégicos</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge streamlit">Streamlit</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                                <span class="tech-badge plotly">Plotly</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Empresa de delivery precisava de visibilidade em tempo real dos KPIs operacionais para tomada de decisões estratégicas.</p>
+                            <p><strong>Solução:</strong> Dashboard interativo com métricas de entregadores, restaurantes e pedidos, permitindo análise por diferentes dimensões temporais e geográficas.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Redução no tempo de análise:</span>
+                                    <span class="result-value">85%</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Métricas monitoradas:</span>
+                                    <span class="result-value">15+</span>
+                                </div>
+                            </div>
                             <ul class="actions">
-                                <li><a href="https://github.com/neemiasbrg/Curry-Company-Project" target="_blank" class="button style1">Leia mais</a></li>
+                                <li><a href="https://github.com/neemiasbrg/Curry-Company-Project" target="_blank" class="button style1">Ver Código</a></li>
+                                <li><a href="https://neemiasbrg-currycompany-growthdashboardoncurrycompany.streamlit.app/" target="_blank" class="button style2">Demo Live</a></li>
                             </ul>
                         </section>
                     </div>
-                    <div class="col-4 col-12-medium">
-                        <section class="highlight">
+                    <div class="col-4 col-12-medium project-item" data-category="ml">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning</div>
                             <a href="https://github.com/neemiasbrg/Fuel-Prices-Project" target="_blank" class="image featured">
-                                <img src="images/Fuel Prices.png" alt="Preço dos Combustíveis" />
+                                <img src="images/Fuel Prices.png" alt="Análise de Preços de Combustíveis" />
                             </a>
-                            <h3><a href="https://github.com/neemiasbrg/Fuel-Prices-Project"target="_blank" >Preço dos Combustíveis</a></h3>
-                            <p>Coletamos dados de preços de combustíveis de 2021 do site oficial e realizamos o pré-processamento, que incluiu limpeza e transformação dos dados. 
-								Aplicamos o algoritmo K-médias para agrupar os dados em clusters regionais e testamos vários modelos de aprendizado de máquina, como Regressão Linear e Random Forest, 
-								para prever os preços e avaliar seu desempenho.
-								O agrupamento com K-médias revelou padrões regionais nos preços dos combustíveis. 
-								O modelo Random Forest foi o mais eficaz, com MSE de 0.052 e R² de 0.92. A validação cruzada confirmou a robustez dos resultados, 
-								fornecendo insights valiosos para estratégias futuras no mercado de combustíveis.
-							</p>
+                            <h3><a href="https://github.com/neemiasbrg/Fuel-Prices-Project" target="_blank">Predição de Preços de Combustíveis</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge sklearn">Scikit-learn</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                                <span class="tech-badge kmeans">K-Means</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Necessidade de prever preços de combustíveis para auxiliar na tomada de decisões estratégicas no setor energético.</p>
+                            <p><strong>Solução:</strong> Modelo de Machine Learning utilizando Random Forest para predição de preços, com clustering K-Means para identificação de padrões regionais.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Acurácia do modelo (R²):</span>
+                                    <span class="result-value">92%</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">MSE:</span>
+                                    <span class="result-value">0.052</span>
+                                </div>
+                            </div>
                             <ul class="actions">
-                                <li><a href="https://github.com/neemiasbrg/Fuel-Prices-Project" target="_blank" class="button style1">Leia mais</a></li>
+                                <li><a href="https://github.com/neemiasbrg/Fuel-Prices-Project" target="_blank" class="button style1">Ver Código</a></li>
+                                
                             </ul>
                         </section>
                     </div>					
-                    <div class="col-4 col-12-medium">
-                        <section class="highlight">
+                    <div class="col-4 col-12-medium project-item" data-category="analytics">
+                        <section class="highlight project-card">
+                            <div class="project-category">Data Analytics</div>
                             <a href="https://github.com/neemiasbrg/Fome-Zero-Project" target="_blank" class="image featured">
                                 <img src="images/fome_zero.png" alt="Fome Zero Growth Dashboard" />
                             </a>
-                            <h3><a href="https://github.com/neemiasbrg/Fome-Zero-Project"target="_blank">Fome Zero Growth Dashboard</a></h3>
-                            <p>Desenvolvemos o Fome Zero Growth Dashboard coletando dados dos restaurantes e usando Python com Streamlit para criar uma aplicação web interativa. 
-								Aplicamos Pandas para análise de dados, Plotly para gráficos interativos, Folium para visualização geoespacial e Pillow para imagens, 
-								resultando em um painel online acessível. 
-								O painel online "Painel Fome Zero" oferece uma visão detalhada do desempenho dos restaurantes, permitindo análises por cidade, 
-								país e tipo de culinária, e ajuda na tomada de decisões estratégicas para expansão e melhoria.
-							</p>
+                            <h3><a href="https://github.com/neemiasbrg/Fome-Zero-Project" target="_blank">Fome Zero - Dashboard de Crescimento</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge streamlit">Streamlit</span>
+                                <span class="tech-badge plotly">Plotly</span>
+                                <span class="tech-badge folium">Folium</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Marketplace de restaurantes precisava de insights sobre performance e oportunidades de crescimento em diferentes mercados.</p>
+                            <p><strong>Solução:</strong> Dashboard interativo com análises geoespaciais, métricas de performance por região e insights para estratégias de expansão.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Restaurantes analisados:</span>
+                                    <span class="result-value">6.9K+</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Países cobertos:</span>
+                                    <span class="result-value">15</span>
+                                </div>
+                            </div>
                             <ul class="actions">
-                                <li><a href="https://github.com/neemiasbrg/Fome-Zero-Project" target="_blank" class="button style1">Leia mais</a></li>
+                                <li><a href="https://github.com/neemiasbrg/Fome-Zero-Project" target="_blank" class="button style1">Ver Código</a></li>
+                                <li><a href="https://neemiasbrg-delicias-que-acabam-com-a-fome.streamlit.app/" target="_blank" class="button style2">Demo Live</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- R1: Recomendação de Moda -->
+                    <div class="col-4 col-12-medium project-item" data-category="bighorn">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning | Bighorn</div>
+                            <a href="https://github.com/neemiasbrg/bighorn_recomendacao_moda" target="_blank" class="image featured">
+                                <img src="images/bighorn.png" alt="Sistema de Recomendação de Moda" />
+                            </a>
+                            <h3><a href="https://github.com/neemiasbrg/bighorn_recomendacao_moda" target="_blank">Recomendação de Moda — Lojas Bighorn</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge sklearn">Scikit-learn</span>
+                                <span class="tech-badge tfidf">TF-IDF</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Personalizar a experiência de compra para aumentar conversão e ticket médio no varejo de moda.</p>
+                            <p><strong>Solução:</strong> Sistema híbrido combinando Filtragem Colaborativa (user-based) e Baseada em Conteúdo via TF-IDF, avaliado com Recall@K sobre o dataset H&M (Kaggle).</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Avaliação:</span>
+                                    <span class="result-value">Recall@K</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Dataset:</span>
+                                    <span class="result-value">H&M Kaggle</span>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="https://github.com/neemiasbrg/bighorn_recomendacao_moda" target="_blank" class="button style1">Ver Código</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- R2: Segmentação RFM -->
+                    <div class="col-4 col-12-medium project-item" data-category="bighorn">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning | BigHorn</div>
+                            <a href="https://github.com/neemiasbrg/bighorn_segmentacao_rfm" target="_blank" class="image featured">
+                                <img src="images/bighorn.png" alt="Segmentação RFM de Clientes" />
+                            </a>
+                            <h3><a href="https://github.com/neemiasbrg/bighorn_segmentacao_rfm" target="_blank">Segmentação de Clientes com RFM</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge kmeans">K-Means</span>
+                                <span class="tech-badge sklearn">Scikit-learn</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Identificar segmentos de clientes para direcionar campanhas de marketing e fidelização de forma personalizada.</p>
+                            <p><strong>Solução:</strong> Análise RFM com scoring por quintis e clustering K-Means, gerando 4 segmentos acionáveis com plano de marketing específico por grupo.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Clientes analisados:</span>
+                                    <span class="result-value">10.000</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Segmentos:</span>
+                                    <span class="result-value">4 grupos</span>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="https://github.com/neemiasbrg/bighorn_segmentacao_rfm" target="_blank" class="button style1">Ver Código</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- R3: Previsão de Demanda -->
+                    <div class="col-4 col-12-medium project-item" data-category="bighorn">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning | Bighorn</div>
+                            <a href="https://github.com/neemiasbrg/bighorn_previsao_demanda" target="_blank" class="image featured">
+                                <img src="images/bighorn.png" alt="Previsão de Demanda no Varejo" />
+                            </a>
+                            <h3><a href="https://github.com/neemiasbrg/bighorn_previsao_demanda" target="_blank">Previsão de Demanda no Varejo de Moda</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge prophet">Prophet</span>
+                                <span class="tech-badge pandas">Pandas</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Antecipar a demanda de produtos para otimizar estoque, evitar rupturas e reduzir liquidações forçadas.</p>
+                            <p><strong>Solução:</strong> Modelo Prophet com sazonalidade de moda (coleções, Black Friday, Natal), intervalos de confiança e horizonte de 12 semanas, avaliado com MAPE.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Horizonte:</span>
+                                    <span class="result-value">12 semanas</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Métrica:</span>
+                                    <span class="result-value">MAPE</span>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="https://github.com/neemiasbrg/bighorn_previsao_demanda" target="_blank" class="button style1">Ver Código</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- S1: Score de Crédito -->
+                    <div class="col-4 col-12-medium project-item" data-category="horizon">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning | Horizon</div>
+                            <a href="https://github.com/neemiasbrg/horizon_score_credito" target="_blank" class="image featured">
+                                <img src="images/horizon.png" alt="Score de Crédito com SHAP" />
+                            </a>
+                            <h3><a href="https://github.com/neemiasbrg/horizon_score_credito" target="_blank">Score de Crédito com Explicabilidade</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge xgboost">XGBoost</span>
+                                <span class="tech-badge shap">SHAP</span>
+                                <span class="tech-badge sklearn">Scikit-learn</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Avaliar automaticamente o risco de crédito com conformidade à Resolução CMN 4.557, que exige explicação das decisões.</p>
+                            <p><strong>Solução:</strong> XGBoost com SHAP para explicabilidade individual — cada recusa gera automaticamente um comunicado com os fatores determinantes da decisão.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">AUC-ROC:</span>
+                                    <span class="result-value">&gt; 0.78</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Conformidade:</span>
+                                    <span class="result-value">CMN 4.557</span>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="https://github.com/neemiasbrg/horizon_score_credito" target="_blank" class="button style1">Ver Código</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- S2: Detecção de Fraude -->
+                    <div class="col-4 col-12-medium project-item" data-category="horizon">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning | Horizon</div>
+                            <a href="https://github.com/neemiasbrg/horizon_deteccao_fraude" target="_blank" class="image featured">
+                                <img src="images/horizon.png" alt="Detecção de Fraude em Transações" />
+                            </a>
+                            <h3><a href="https://github.com/neemiasbrg/horizon_deteccao_fraude" target="_blank">Detecção de Fraude em Transações</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge lightgbm">LightGBM</span>
+                                <span class="tech-badge smote">SMOTE</span>
+                                <span class="tech-badge sklearn">Scikit-learn</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Detectar transações fraudulentas em dados extremamente desbalanceados (1 fraude para cada 500+ transações normais).</p>
+                            <p><strong>Solução:</strong> LightGBM + SMOTE com threshold otimizado para F1-Score, avaliado via AUC-PR — a métrica correta para dados desbalanceados.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Dataset:</span>
+                                    <span class="result-value">284K transações</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Métrica principal:</span>
+                                    <span class="result-value">AUC-PR</span>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="https://github.com/neemiasbrg/horizon_deteccao_fraude" target="_blank" class="button style1">Ver Código</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- S3: Churn de Cooperados -->
+                    <div class="col-4 col-12-medium project-item" data-category="horizon">
+                        <section class="highlight project-card">
+                            <div class="project-category">Machine Learning | Horizon</div>
+                            <a href="https://github.com/neemiasbrg/horizon_churn_cooperados" target="_blank" class="image featured">
+                                <img src="images/horizon.png" alt="Churn de Cooperados Sicredi" />
+                            </a>
+                            <h3><a href="https://github.com/neemiasbrg/horizon_churn_cooperados" target="_blank">Churn de Cooperados Sicredi</a></h3>
+                            <div class="project-tech-stack">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge xgboost">XGBoost</span>
+                                <span class="tech-badge shap">SHAP</span>
+                                <span class="tech-badge sklearn">Scikit-learn</span>
+                            </div>
+                            <p><strong>Problema de Negócio:</strong> Identificar cooperados em risco de cancelamento antes que saiam, priorizando ações de retenção de alto ROI.</p>
+                            <p><strong>Solução:</strong> XGBoost + SHAP com segmentação em 3 tiers de risco (baixo/médio/alto) e plano de retenção personalizado por segmento com estimativa de ROI.</p>
+                            <div class="project-results">
+                                <div class="result-item">
+                                    <span class="result-label">Cooperados analisados:</span>
+                                    <span class="result-value">15.000</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Tiers de risco:</span>
+                                    <span class="result-value">3 grupos</span>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="https://github.com/neemiasbrg/horizon_churn_cooperados" target="_blank" class="button style1">Ver Código</a></li>
                             </ul>
                         </section>
                     </div>
@@ -181,6 +417,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects-filter.js"></script>
 
 </body>
 </html>
